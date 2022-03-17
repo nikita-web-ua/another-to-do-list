@@ -18,7 +18,7 @@ const TodoBlock = (props) => {
     }, [])
 
     const addNewTask = (value) => {
-        let newTask = {id: parseInt(taskList.length), title: value, status: false}
+        let newTask = {id: parseInt(taskList.length + 1), title: value, status: false}
         setTaskList([...taskList, newTask])
     }
 

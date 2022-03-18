@@ -1,4 +1,4 @@
-import {Button, Divider, List, Typography} from "antd"
+import {Button, Checkbox, Divider, List, Typography} from "antd"
 import {DeleteOutlined} from '@ant-design/icons'
 const {Text} = Typography
 
@@ -26,10 +26,9 @@ const TodoList = ({taskList, setTaskList}) => {
                 renderItem={task => (
                     <List.Item>
                         <span>
-                            <b>{task.id}</b>
-                            <input style={{marginLeft: '5px'}} type="checkbox" checked={task.completed} onChange={() => {statusToggler(task.id)}}/>
+                            <Checkbox checked={task.completed} onChange={() => {statusToggler(task.id)}}><b>{task.id}</b></Checkbox>
                         </span>
-                        <span style={{alignItems: 'left', width:'80%'}}>
+                        <span className={'task-text'}>
                             {task.completed
                                 ? <Text disabled delete>{task.title}</Text>
                                 : <Text >{task.title}</Text>}

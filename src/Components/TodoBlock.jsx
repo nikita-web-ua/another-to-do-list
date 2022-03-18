@@ -31,7 +31,7 @@ const TodoBlock = (props) => {
                     <AddTodo addNewTask={addNewTask} />
                     { loader && <Loader />}
                     {taskList.length < 1
-                        ? loader ? null : <p>No tasks for now!)</p>
+                        ? loader ? null : <Divider orientation="left">No tasks for now:)</Divider>
                         : <TodoList taskList={taskList} setTaskList={setTaskList}/>}
                 </div>
             </Col>

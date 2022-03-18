@@ -8,6 +8,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.task-text{
+  text-align: left;
+  width: 80%;
+}
+
+@media (max-width: 580px){
+  .task-text{
+    width: 60%;
+  }
+}
 /*  ---  LOADER  ---  */
 /*--------------------*/
 

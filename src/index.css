@@ -6,6 +6,36 @@ body {
   'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+
+}
+
+.todoBlock h1 {
+  margin-top: 23px;
+  color: #1F2667;
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 600;
+}
+
+.ant-list-bordered {
+  border: none !important;
+  background: white;
+  border-radius: 10px !important;
+}
+
+.ant-divider-inner-text {
+  color: #1F2667;
+}
+
+.ant-btn-lg {
+  border-radius: 0 10px 10px 0 !important;
+}
+
+.ant-input{
+  border-radius: 10px 0 0 10px !important;
+  border: 1px solid white !important;
 }
 
 .task-text{
@@ -17,7 +47,12 @@ body {
   .task-text{
     width: 60%;
   }
+
+  .todoBlock h1 {
+    font-size: 27px;
+  }
 }
+
 /*  ---  LOADER  ---  */
 /*--------------------*/
 

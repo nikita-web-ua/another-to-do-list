@@ -6,7 +6,7 @@ const TodoList = ({taskList, setTaskList}) => {
 
     const statusToggler = (id) => {
         setTaskList(taskList.map( obj => {
-            if (obj.id == id){
+            if (obj.id === id){
                 obj.completed = !obj.completed
             }
             return obj
@@ -14,8 +14,9 @@ const TodoList = ({taskList, setTaskList}) => {
     }
 
     const onDelete = (id) => {
-        setTaskList( taskList.filter( title =>  title.id != id))
+        setTaskList( taskList.filter( title =>  title.id !== id))
     }
+
     return (
         <div className={'todolist'}>
             <Divider orientation="left">Task List:</Divider>

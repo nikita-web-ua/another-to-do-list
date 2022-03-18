@@ -27,7 +27,6 @@ const TodoBlock = (props) => {
             <Col xs={20} sm={16} md={14} lg={12} xl={10}>
                 <div className={'todoBlock'} >
                     <h1>Your To Do List:</h1>
-                    <Divider/>
                     <AddTodo addNewTask={addNewTask} />
                     { loader && <Loader />}
                     {taskList.length < 1
